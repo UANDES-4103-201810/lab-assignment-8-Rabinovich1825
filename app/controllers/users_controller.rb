@@ -71,4 +71,24 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:first_name, :last_name, :username, :is_admin)
     end
+
+  def admin_home
+    if @user.is_admin
+
+    else
+      redirect_to
+    end
+  end
+
+  def admin_users
+
+  end
+
+  def admin_products
+
+  end
+
+  def admin_user_product
+
+  end
 end
