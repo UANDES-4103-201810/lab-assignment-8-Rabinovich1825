@@ -1,9 +1,33 @@
+
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
 
-<%= render 'partial' %>
 
-<br>
 
-<%= link_to 'New User', new_user_path %>
+    <div class="col-md-2">
+      <div class="row">
+        <a type="button" class="btn btn-default" href="/users " style = "width: 100%">Users</a>
+      </div>
+      <div class="row">
+        <a type="button" class="btn btn-default" href="/products " style="width: 100%">Products</a>
+      </div>
+
+
+
+    </div>
+    <div class="col-md-10">
+
+
+
+      <%= render 'partial' %>
+
+
+
+      <%= link_to 'New User', new_user_path %>
+
+  </div>
+
+
+
